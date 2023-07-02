@@ -7,6 +7,7 @@ const twitchApi = {
 			// Create browser
 			const browser = await puppeteer.launch({
 				headless: "new",
+				args: ["--no-sandbox"],
 			});
 			// Go to the past streams page
 			const page = await browser.newPage();

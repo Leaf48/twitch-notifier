@@ -19,6 +19,7 @@ const twitchApi = {
             // Create browser
             const browser = yield puppeteer_1.default.launch({
                 headless: "new",
+                args: ["--no-sandbox"],
             });
             // Go to the past streams page
             const page = yield browser.newPage();
