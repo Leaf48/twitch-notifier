@@ -37,8 +37,8 @@ const twitchApi = {
 			await browser.close();
 
 			return streams;
-		} catch {
-			throw "Error to retrieve stream history";
+		} catch (error) {
+			throw error;
 		}
 	},
 };
